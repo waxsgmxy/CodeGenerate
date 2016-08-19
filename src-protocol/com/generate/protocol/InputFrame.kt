@@ -21,9 +21,7 @@ class InputPanel : BasePanel() {
 
 class InputItem : BasePanel() {
 
-    init {
 
-    }
 
 }
 
