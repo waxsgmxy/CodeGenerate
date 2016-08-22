@@ -14,4 +14,9 @@ class Field {
 abstract class Method(val name: String, val params: MutableList<Field> = arrayListOf()) {
 
 
+
+}
+
+fun main(args: Array<String>) {
+    val pojo = Pojo("", "")
 }
