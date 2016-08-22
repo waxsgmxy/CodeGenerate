@@ -5,13 +5,13 @@ package com.generate
  */
 data class Pojo(val packageName: String, val name: String, val imports: MutableList<String> = arrayListOf()) {
 
-
 }
 
 class Field {
 
 }
 
-interface Method {
+abstract class Method(val name: String, val params: MutableList<Field> = arrayListOf()) {
+
 
 }
