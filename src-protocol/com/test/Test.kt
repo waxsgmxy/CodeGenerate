@@ -7,8 +7,6 @@ import com.generate.protocol.InputFrame
  */
 
 fun main(args: Array<String>) {
-    val frame = InputFrame();
-    frame.setBounds(100, 100, 500, 500)
-    frame.isVisible = true
+
 
 }
