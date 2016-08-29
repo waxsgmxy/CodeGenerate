@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abebc3f1-75c7-47f9-8e35-aa3f6ad1ec35" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src-protocol/com/test/HomeBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src-protocol/com/test/Protocol.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src-protocol/com/test/Test.java" afterPath="$PROJECT_DIR$/src-protocol/com/test/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src-protocol/com/test/Test.kt" afterPath="$PROJECT_DIR$/src-protocol/com/test/Test.kt" />
-    </list>
+    <list default="true" id="abebc3f1-75c7-47f9-8e35-aa3f6ad1ec35" name="Default" comment="" />
     <ignored path="CodeGenerate.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -656,15 +650,15 @@
       <workItem from="1471832540433" duration="8290000" />
       <workItem from="1472011342801" duration="1572000" />
       <workItem from="1472103521494" duration="9608000" />
-      <workItem from="1472202146415" duration="823000" />
+      <workItem from="1472202146415" duration="953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22811000" />
+    <option name="totallyTimeSpent" value="22941000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
