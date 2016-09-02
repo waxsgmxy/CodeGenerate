@@ -7,9 +7,9 @@ class Protocol(val packageName: String, val className: String, val operation: St
 
     val requests: MutableList<Field> = arrayListOf();
 
-    val responses: MutableList<Field> = arrayListOf();
+    var response: BeanDeclare? = null;
 
-    val beanPool = mapOf<String, Any>()
+    val beanPool = mutableMapOf<String, BeanDeclare>();
 
     fun fieldMapping(field: Field): String {
         when (field.fieldType) {
@@ -33,12 +33,12 @@ class Protocol(val packageName: String, val className: String, val operation: St
         return "";
     }
 
-    fun addBeanInPool() {
-
+    fun addBeanDeclare(beanDeclare: BeanDeclare) {
+        beanPool.put(beanDeclare.className, beanDeclare);
     }
 
-    fun getBeanFromPool() {
-
+    fun getBeanDeclare(className: String): BeanDeclare? {
+        return beanPool.get(className);
     }
 }
 
@@ -48,13 +48,17 @@ enum class FieldType {
 
 }
 
-class BeanDeclare {
+class BeanDeclare(val className: String) {
 
     val fields: MutableList<Field> = arrayListOf();
 
 }
 
-class BeanField {
+class BeanField(val className: String, key: String, name: String?) : Field(key, FieldType.BEAN, name) {
+
+}
+
+class ListField(val key: String, val name: String?) {
 
 }
 

@@ -3,7 +3,6 @@ package com.test;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by yangzhilei on 16/8/22.
@@ -23,24 +22,10 @@ public class Test {
         }
     }
 
-    static class A {
-        public A() {
-            this("");
-        }
-
-        public A(String str) {
-            System.out.println("A...");
-        }
-    }
-
-    static class B extends A {
-
-    }
-
     public abstract static class TT<T> {
 
         public void test() {
-            System.out.println(getActualType(getClass()));
+            System.out.println(getActualType(getClass().getGenericSuperclass()));
         }
     }
 
