@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<protocol packageName="" className="" operation="" requestWithoutCookie="">
+<!-- type: int long float double bigdecimal string bean list  -->
+<protocol packageName="com.test" className="Test1" operation="/v1/test.json" requestWithoutCookie="false">
 
     <request>
+
+        <param key="name" type="string"></param>
+        <param key="num" type="int"></param>
 
     </request>
 
     <response>
+
+        <param key="bean" type="bean" className="Bean">
+            <param key="page" type="string"></param>
+            <param key="pageNo" type="int"></param>
+        </param>
 
     </response>
 
