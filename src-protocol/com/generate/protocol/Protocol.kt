@@ -5,36 +5,24 @@ package com.generate.protocol
  */
 class Protocol(val packageName: String, val className: String, val operation: String, val requestWithoutCookie: Boolean) {
 
-    val requests: MutableList<Field> = arrayListOf();
+    var responseClass: String? = null;
 
-    var response: BeanDeclare? = null;
+    val requests: MutableList<Field> = arrayListOf();
 
     val beanPool = mutableMapOf<String, BeanDeclare>();
 
-    fun fieldMapping(field: Field): String {
-        when (field.fieldType) {
-            FieldType.INT -> return "int"
-            FieldType.LONG -> return "long"
-            FieldType.FLOAT -> return "float"
-            FieldType.DOUBLE -> return "double"
-            FieldType.BIGDECIMAL -> return "BigDecimal"
-            FieldType.STRING -> return "String"
-            FieldType.BEAN -> return beanMapping(field)
-            FieldType.LIST -> return listMapping(field)
+    fun addRequest(field: Field) {
+        requests.add(field)
+    }
+
+    fun addBeanDeclare(vararg beanDeclares: BeanDeclare) {
+        for (beanDeclare in beanDeclares) {
+            beanPool.put(beanDeclare.className, beanDeclare);
         }
-        return "";
     }
 
-    fun beanMapping(field: Field): String {
-        return "";
-    }
-
-    fun listMapping(field: Field): String {
-        return "";
-    }
-
-    fun addBeanDeclare(beanDeclare: BeanDeclare) {
-        beanPool.put(beanDeclare.className, beanDeclare);
+    fun isBeanDeclareExits(className: String): Boolean {
+        return beanPool.get(className) != null;
     }
 
     fun getBeanDeclare(className: String): BeanDeclare? {
@@ -52,19 +40,17 @@ class BeanDeclare(val className: String) {
 
     val fields: MutableList<Field> = arrayListOf();
 
-}
-
-class BeanField(val className: String, key: String, name: String?) : Field(key, FieldType.BEAN, name) {
-
-}
-
-class ListField(val key: String, val name: String?) {
+    fun addField(field: Field) {
+        fields.add(field);
+    }
 
 }
 
-open class Field(val key: String, val fieldType: FieldType, val name: String?) {
+open class Field(val fieldType: FieldType, val key: String, val name: String?) {
 
-    constructor(key: String, fieldType: FieldType) : this(key, fieldType, null);
+    constructor(fieldType: FieldType, key: String) : this(fieldType, key, null);
+
+    var beanDeclareClass: String? = null;
 
     /**
      * 获取变量名
@@ -75,4 +61,38 @@ open class Field(val key: String, val fieldType: FieldType, val name: String?) {
         }
         return key;
     }
+
+    fun setBeanDeclare(beanDeclareClass: String): Field {
+        this.beanDeclareClass = beanDeclareClass;
+        return this;
+    }
+
+    fun getBeanDeclare(): String {
+        if (beanDeclareClass == null) {
+            return "Object";
+        }
+        return beanDeclareClass!!;
+    }
+}
+
+fun fieldMapping(field: Field): String {
+    when (field.fieldType) {
+        FieldType.INT -> return "int"
+        FieldType.LONG -> return "long"
+        FieldType.FLOAT -> return "float"
+        FieldType.DOUBLE -> return "double"
+        FieldType.BIGDECIMAL -> return "BigDecimal"
+        FieldType.STRING -> return "String"
+        FieldType.BEAN -> return beanMapping(field)
+        FieldType.LIST -> return listMapping(field)
+    }
+    return "";
+}
+
+private fun beanMapping(field: Field): String {
+    return field.getBeanDeclare();
+}
+
+private fun listMapping(field: Field): String {
+    return "ArrayList<${field.getBeanDeclare()}>";
 }
