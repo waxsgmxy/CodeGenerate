@@ -1,0 +1,322 @@
+{
+  "bottomBanners": [
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/bottom_banner_newerGift0906.png",
+      "transition": {
+        "forwardUrl": "http://qwww.hdfax.com/snow/invitation/newerGift/",
+        "h5Title": "新手礼包",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://qwww.hdfax.com/snow",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/bottom_banner_riskAssessment_2.png",
+      "transition": {
+        "forwardUrl": "http://139.129.45.191:3000",
+        "h5Title": "风险测评",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 1,
+        "safeDomain": "",
+        "tplParam": ""
+      }
+    }
+  ],
+  "homePageAnnouncements": [
+    {
+      "announcementId": 124,
+      "content": "【停服公告】因服务器维护，将于9月9日00:00-06:00期间暂停服务，在此期间给您带来不便敬请谅解。",
+      "expireTime": "20160909-060000"
+    },
+    {
+      "announcementId": 20,
+      "content": "银行支付限额调整通知",
+      "expireTime": "21160416-193000"
+    }
+  ],
+  "products": [
+    {
+      "closeType": 1,
+      "displayRate": "12.09%",
+      "features": "630天 | 100元起投",
+      "intro": "智能投顾二期-21月",
+      "minBuyAmount": "100.00",
+      "nextStatus": 4,
+      "nextStatusDesc": "抢光了",
+      "productId": 1560,
+      "productLimit": 630,
+      "sellBeginTime": "2016-09-11 00:00:02",
+      "sellEndTime": "2016-10-14 00:00:00",
+      "status": 3,
+      "statusDesc": "立即投资",
+      "tagBgColor": "",
+      "tagDesc": "",
+      "tagFontColor": "",
+      "tagFrameColor": "",
+      "tagImageURL": "",
+      "tagIntro": "",
+      "yieldRate": "12.0900",
+      "yieldRateDesc": "预期年化收益"
+    },
+    {
+      "closeType": 0,
+      "displayRate": "1.73%",
+      "features": "活期 | 0.01元起投",
+      "intro": "0910 曼联VS曼城 欧陆大赢家",
+      "minBuyAmount": "0.01",
+      "nextStatus": 4,
+      "nextStatusDesc": "抢光了",
+      "productId": 10000020,
+      "productLimit": "",
+      "sellBeginTime": "",
+      "sellEndTime": "",
+      "status": 3,
+      "statusDesc": "热销中",
+      "tagBgColor": "",
+      "tagDesc": "",
+      "tagFontColor": "",
+      "tagFrameColor": "",
+      "tagImageURL": "",
+      "tagIntro": "恒大集团是集地产、金融、互联网、健康、旅游、文化、体育及农牧为一体的现代化企业集团。总资产超7500亿，员工8万多人。2015年实现销售额2013.4亿，缴纳税费超200亿。\n\n恒大金服（HDFAX.COM）是恒大集团旗下的互联网金融信息平台，风险管理体系具有国际金融机构专业水准，预期年化收益同业突出。\n\n恒大金服致力于成为中国互联网金融信息平台的领军者！",
+      "yieldRate": "1.7350",
+      "yieldRateDesc": "七日年化收益"
+    },
+    {
+      "closeType": 1,
+      "displayRate": "13.03%",
+      "features": "180天 | 100元起投",
+      "intro": "智能投顾二期-6月",
+      "minBuyAmount": "100.00",
+      "nextStatus": 4,
+      "nextStatusDesc": "抢光了",
+      "productId": 1558,
+      "productLimit": 180,
+      "sellBeginTime": "2016-09-11 00:00:02",
+      "sellEndTime": "2016-10-14 00:00:00",
+      "status": 3,
+      "statusDesc": "立即投资",
+      "tagBgColor": "",
+      "tagDesc": "新人专享",
+      "tagFontColor": "#9400D3",
+      "tagFrameColor": "#96CDCD",
+      "tagImageURL": "",
+      "tagIntro": "新人专享描述",
+      "yieldRate": "13.0300",
+      "yieldRateDesc": "预期年化收益"
+    },
+    {
+      "closeType": 1,
+      "displayRate": "13.08%",
+      "features": "150天 | 100元起投",
+      "intro": "智能投顾二期-5月",
+      "minBuyAmount": "100.00",
+      "nextStatus": 4,
+      "nextStatusDesc": "抢光了",
+      "productId": 1556,
+      "productLimit": 150,
+      "sellBeginTime": "2016-09-11 00:00:02",
+      "sellEndTime": "2016-10-14 00:00:00",
+      "status": 3,
+      "statusDesc": "立即投资",
+      "tagBgColor": "",
+      "tagDesc": "",
+      "tagFontColor": "",
+      "tagFrameColor": "",
+      "tagImageURL": "",
+      "tagIntro": "",
+      "yieldRate": "13.0800",
+      "yieldRateDesc": "预期年化收益"
+    },
+    {
+      "closeType": 0,
+      "displayRate": "1.73%",
+      "features": "活期 | 0.01元起投",
+      "intro": "0910 河北华夏幸福VS广州恒大淘宝 球迷夺金",
+      "minBuyAmount": "0.01",
+      "nextStatus": 4,
+      "nextStatusDesc": "抢光了",
+      "productId": 10000020,
+      "productLimit": "",
+      "sellBeginTime": "",
+      "sellEndTime": "",
+      "status": 3,
+      "statusDesc": "热销中",
+      "tagBgColor": "",
+      "tagDesc": "",
+      "tagFontColor": "",
+      "tagFrameColor": "",
+      "tagImageURL": "",
+      "tagIntro": "恒大集团是集地产、金融、互联网、健康、旅游、文化、体育及农牧为一体的现代化企业集团。总资产超7500亿，员工8万多人。2015年实现销售额2013.4亿，缴纳税费超200亿。\n\n恒大金服（HDFAX.COM）是恒大集团旗下的互联网金融信息平台，风险管理体系具有国际金融机构专业水准，预期年化收益同业突出。\n\n恒大金服致力于成为中国互联网金融信息平台的领军者！",
+      "yieldRate": "1.7350",
+      "yieldRateDesc": "七日年化收益"
+    }
+  ],
+  "recommendBanners": [
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index_v2/image/818_banner01.png",
+      "transition": {
+        "forwardUrl": "http://docker54.hdfax.com:8095/snow/fortuneFestival",
+        "h5Title": "恒大金服 8.。18发财节",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.2.2",
+        "needLogin": 0,
+        "safeDomain": "http://docker54.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index_v2/image/invitation_09.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/invitation",
+        "h5Title": "恒大金服 邀请有礼",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.2.2",
+        "needLogin": 1,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    }
+  ],
+  "resultCode": "1000",
+  "resultMsg": "操作成功",
+  "topBanners": [
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_zhongqiu.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/midAutumn",
+        "h5Title": "中秋特享",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_midAutumnVouchers.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/midAutumnVouchers",
+        "h5Title": "全场投资返优惠券",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_invitation0906.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/invitation",
+        "h5Title": "邀请有礼",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 1,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_oulu0908.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/euroLeague",
+        "h5Title": "欧陆大赢家qa",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_dayingjia0918.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/boday/entry",
+        "h5Title": "恒大大赢家-QA",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 1,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_soccerFans0918.png",
+      "transition": {
+        "forwardUrl": "http://qpromotion.hdfax.com/snow/promotion/soccerFans",
+        "h5Title": "球迷夺金",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://qpromotion.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_oulu0908.png",
+      "transition": {
+        "forwardUrl": "http://docker54.hdfax.com:8099/snow/euroLeague",
+        "h5Title": "欧陆大赢家docker",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://docker54.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_dayingjia0918.png",
+      "transition": {
+        "forwardUrl": "http://docker54.hdfax.com:8099/snow/boday/entry",
+        "h5Title": "恒大大赢家-Docker",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 1,
+        "safeDomain": "http://docker54.hdfax.com",
+        "tplParam": ""
+      }
+    },
+    {
+      "imageURL": "http://172.16.57.29:8088/eif-cms/app/index/image/top_banner_soccerFans0918.png",
+      "transition": {
+        "forwardUrl": "http://docker54.hdfax.com:8099/snow/promotion/soccerFans",
+        "h5Title": "球迷夺金",
+        "isH5": 1,
+        "isNativeBar": 1,
+        "maxVersion": "2.0.0",
+        "minVersion": "1.0.0",
+        "needLogin": 0,
+        "safeDomain": "http://docker54.hdfax.com",
+        "tplParam": ""
+      }
+    }
+  ],
+  "traceNo": "mtpac10393a409351316"
+}

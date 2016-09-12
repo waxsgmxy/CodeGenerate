@@ -52,6 +52,8 @@ open class Field(val fieldType: FieldType, val key: String, val name: String?) {
 
     var beanDeclareClass: String? = null;
 
+    var mockValue: Any? = null;
+
     /**
      * 获取变量名
      */
@@ -67,6 +69,11 @@ open class Field(val fieldType: FieldType, val key: String, val name: String?) {
         return this;
     }
 
+    fun setMockValue(mockValue: Any): Field {
+        this.mockValue = mockValue;
+        return this;
+    }
+
     fun getBeanDeclare(): String {
         if (beanDeclareClass == null) {
             return "Object";
@@ -79,8 +86,10 @@ fun fieldMapping(field: Field): String {
     when (field.fieldType) {
         FieldType.INT -> return "int"
         FieldType.LONG -> return "long"
-        FieldType.FLOAT -> return "float"
-        FieldType.DOUBLE -> return "double"
+//        FieldType.FLOAT -> return "float"
+//        FieldType.DOUBLE -> return "double"
+        FieldType.FLOAT -> return "String"
+        FieldType.DOUBLE -> return "String"
         FieldType.BIGDECIMAL -> return "BigDecimal"
         FieldType.STRING -> return "String"
         FieldType.BEAN -> return beanMapping(field)

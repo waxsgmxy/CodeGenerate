@@ -1,0 +1,20 @@
+{
+  "mainStatus": 1,
+  "clientId": "12334566",
+  "appId": "001",
+  "test": {
+    "command": 1002.02,
+    "total": 100.3,
+    "items": [
+      {
+        "aa": 10000000000,
+        "bb": "cd"
+      }
+    ]
+  },
+  "intArray": [
+    1,
+    2,
+    3
+  ]
+}

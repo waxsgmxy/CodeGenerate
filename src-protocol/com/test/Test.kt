@@ -45,5 +45,15 @@ fun main(args: Array<String>) {
 
     protocol.responseClass = "Response";
     protocol.addRequest(Field(FieldType.LONG, "currentProductId"))
-    println(OutputProtocol(protocol).outProtocol());
+//    println(generateProtocol(protocol));
+
+    val pj = ParseJson("com.evergrande.eif.net.api.home", "HDQueryHomePageProtoAnnotation", "v2/homepage/op_query_home_page.json", true).setResponseClass("HomeResponse");
+    pj.addBeanMapping("BottomBanner", "Banner")
+    pj.addBeanMapping("TopBanner", "Banner")
+    pj.addBeanMapping("RecommendBanner", "Banner")
+    val responseJson = loadFile("./json/main/response.json")
+
+    val p = parseJson(pj, null, responseJson)
+    WriteFile(p, "/Users/yangzhilei/DeskTop/test/").write();
+
 }

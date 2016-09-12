@@ -1,0 +1,36 @@
+{
+  "expectedNetProfit": "25.39",
+  "expectedProfit": "25.39",
+  "expectedRaiseInterestProfit": "0.00",
+  "myFixedProductSummaryList": [
+    {
+      "couponStatus": 0,
+      "dueDate": "2016-11-28",
+      "expectedAnnualRate": "1.030000",
+      "expectedNetProfit": "25.39",
+      "expectedRaiseInterestProfit": "0.00",
+      "expectedTotalProfit": "25.39",
+      "inceptionDate": 1472486400000,
+      "netProfit": "0.00",
+      "paymentDesc": null,
+      "productId": 490,
+      "productName": "发现3月-spv限额500000-起投100001号",
+      "productNo": "bb11fdb9295a4f55af32d789815f09c9",
+      "raiseInterestProfit": "0.00",
+      "sourceType": "online",
+      "startProfitDate": "2016-08-30",
+      "status": 2,
+      "statusDesc": "投资中",
+      "totalAmount": "10000.00",
+      "totalProfit": "0.00",
+      "transDate": null
+    }
+  ],
+  "netProfit": "0.00",
+  "raiseInterestProfit": "0.00",
+  "resultCode": "1000",
+  "resultMsg": "操作成功",
+  "totalAsset": "10000.00",
+  "totalProfit": "0.00",
+  "traceNo": "mtpac10393a4093466990"
+}
