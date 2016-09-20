@@ -11,6 +11,8 @@ class Protocol(val packageName: String, val className: String, val operation: St
 
     val beanPool = mutableMapOf<String, BeanDeclare>();
 
+    var responseJsonPath: String? = null;
+
     fun addRequest(field: Field) {
         requests.add(field)
     }
