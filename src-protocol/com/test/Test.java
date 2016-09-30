@@ -3,8 +3,13 @@ package com.test;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.ListIterator;
 
 /**
@@ -16,13 +21,21 @@ public class Test {
 
     public static void main(String[] args) {
 
-        double max = 1.35;
-        int v = (int) Math.round(max * 100);
-        double maxY = (v / 5 + 1) * 5 / 100d;
-        System.out.println(new DecimalFormat("######.00").format(maxY));
+//        double max = 1.35;
+//        int v = (int) Math.round(max * 100);
+//        double maxY = (v / 5 + 1) * 5 / 100d;
+//        System.out.println(new DecimalFormat("######.00").format(maxY));
+//
+//        long l = 10000l;
+//        System.out.println(new DecimalFormat("###,###").format(l));
 
-        long l = 10000l;
-        System.out.println(new DecimalFormat("###,###").format(l));
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date date = sf.parse("2017-01-01");
+            System.out.println(date.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
 
 //        new TT<TT>() {

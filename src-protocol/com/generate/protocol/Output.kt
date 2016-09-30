@@ -49,7 +49,6 @@ class OutputProtocol(val protocol: Protocol) {
         writeConstructor();
         writeOperation();
         writeRequestWithoutCookie();
-        writeMock();
         writeResponse();
         writeBeans();
         end();
@@ -73,9 +72,6 @@ class OutputProtocol(val protocol: Protocol) {
     private fun writeConstructor() {
         append("    public ${protocol.className}(IHDRequestListener listener) {\n")
         append("        super(listener);\n");
-        if (protocol.responseJsonPath != null) {
-            append("        setResponseJsonPath(wrapResponseJsonPath(\"${protocol.responseJsonPath}\"));\n")
-        }
         append("    }${line(2)}");
     }
 
@@ -93,17 +89,6 @@ class OutputProtocol(val protocol: Protocol) {
             append("        return ${protocol.requestWithoutCookie};\n")
             append("    }${line(2)}")
         }
-    }
-
-    private fun writeMock() {
-        append("    @Override\n")
-        append("    public Object mockSuccess() {\n")
-        append("        try {\n")
-        append("            return new HDAnnotationMtpResponse<${protocol.responseClass}>() {}.parse(loadJsonObject());\n")
-        append("        } catch (Exception e) {\n")
-        append("        }\n")
-        append("        return super.mockSuccess();\n")
-        append("    }${line(2)}")
     }
 
     private fun note(note: String) {

@@ -11,8 +11,6 @@ class Protocol(val packageName: String, val className: String, val operation: St
 
     val beanPool = mutableMapOf<String, BeanDeclare>();
 
-    var responseJsonPath: String? = null;
-
     fun addRequest(field: Field) {
         requests.add(field)
     }
@@ -34,7 +32,7 @@ class Protocol(val packageName: String, val className: String, val operation: St
 
 enum class FieldType {
 
-    INT, LONG, FLOAT, DOUBLE, BIGDECIMAL, STRING, BEAN, LIST;
+    INT, LONG, FLOAT, DOUBLE, BIGDECIMAL, STRING, BEAN, LIST, BOOLEAN;
 
 }
 
@@ -94,6 +92,7 @@ fun fieldMapping(field: Field): String {
         FieldType.DOUBLE -> return "String"
         FieldType.BIGDECIMAL -> return "BigDecimal"
         FieldType.STRING -> return "String"
+        FieldType.BOOLEAN -> return "boolean"
         FieldType.BEAN -> return beanMapping(field)
         FieldType.LIST -> return listMapping(field)
     }

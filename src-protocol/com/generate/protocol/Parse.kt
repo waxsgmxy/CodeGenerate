@@ -100,6 +100,7 @@ class ParseJson(val packageName: String, val className: String, val operation: S
             is Double -> return Field(FieldType.DOUBLE, key)
             is String -> return Field(FieldType.STRING, key)
             is BigDecimal -> return Field(FieldType.BIGDECIMAL, key)
+            is Boolean -> return Field(FieldType.BOOLEAN, key)
             is JSONObject -> {
                 var className = upperFirst(key);
                 if (beanMappings.get(className) != null) {
@@ -126,6 +127,7 @@ class ParseJson(val packageName: String, val className: String, val operation: S
                 is Double -> className = "Double"
                 is String -> className = "String"
                 is BigDecimal -> className = "BigDecimal"
+                is Boolean -> className = "Boolean"
                 is JSONObject -> {
                     if (beanMappings.get(className) != null) {
                         className = beanMappings.get(className)!!
