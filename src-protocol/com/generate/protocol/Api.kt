@@ -4,6 +4,10 @@ package com.generate.protocol
  * Created by yangzhilei on 16/9/12.
  */
 
+val version = "0.0.2";
+
+var useSimpleValue = false;//是否使用基础数据类型
+
 /**
  * 根据协议对象生成目标代码
  */

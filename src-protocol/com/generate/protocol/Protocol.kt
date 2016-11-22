@@ -3,7 +3,14 @@ package com.generate.protocol
 /**
  * Created by yangzhilei on 16/8/25.
  */
+
+enum class ProtocolType {
+    TYPE_MTP, TYPE_YM
+}
+
 class Protocol(val packageName: String, val className: String, val operation: String, val requestWithoutCookie: Boolean) {
+
+    var type = ProtocolType.TYPE_MTP;
 
     var responseClass: String? = null;
 
@@ -27,6 +34,11 @@ class Protocol(val packageName: String, val className: String, val operation: St
 
     fun getBeanDeclare(className: String): BeanDeclare? {
         return beanPool.get(className);
+    }
+
+    fun setProtocolType(type: ProtocolType): Protocol {
+        this.type = type;
+        return this;
     }
 }
 
@@ -80,9 +92,17 @@ open class Field(val fieldType: FieldType, val key: String, val name: String?) {
         }
         return beanDeclareClass!!;
     }
+
+    fun isSimpleValue(): Boolean {
+        return fieldType == FieldType.INT || fieldType == FieldType.LONG || fieldType == FieldType.FLOAT || fieldType == FieldType.DOUBLE
+                || fieldType == FieldType.BIGDECIMAL || fieldType == FieldType.BOOLEAN;
+    }
 }
 
 fun fieldMapping(field: Field): String {
+    if (useSimpleValue && field.isSimpleValue()) {
+        return "SimpleValue";
+    }
     when (field.fieldType) {
         FieldType.INT -> return "int"
         FieldType.LONG -> return "long"

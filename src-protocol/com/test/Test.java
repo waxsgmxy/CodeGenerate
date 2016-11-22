@@ -1,16 +1,7 @@
 package com.test;
 
-import java.lang.ref.WeakReference;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.math.BigDecimal;
-import java.math.MathContext;
-import java.text.DecimalFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.ListIterator;
 
 /**
  * Created by yangzhilei on 16/8/22.
@@ -21,6 +12,26 @@ public class Test {
 
     public static void main(String[] args) {
 
+        SimpleValue simpleValue = new SimpleValue("232.220909");
+        System.out.println(simpleValue.intValue());
+        System.out.println(simpleValue.longValue());
+        System.out.println(simpleValue.doubleValue());
+        System.out.println(simpleValue.floatValue());
+        System.out.println(simpleValue.bigDecimalValue());
+        System.out.println(simpleValue.booleanValue());
+
+        String s = new String("ser");
+        String ss = "ser";
+
+        System.out.println(s.hashCode());
+        System.out.println(ss.hashCode());
+
+        System.out.println(s == ss);
+
+//        Integer v = new Integer(2);
+//
+//        System.out.println(v != 0);
+
 //        double max = 1.35;
 //        int v = (int) Math.round(max * 100);
 //        double maxY = (v / 5 + 1) * 5 / 100d;
@@ -29,14 +40,13 @@ public class Test {
 //        long l = 10000l;
 //        System.out.println(new DecimalFormat("###,###").format(l));
 
-        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-            Date date = sf.parse("2017-01-01");
-            System.out.println(date.getTime());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
+//        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+//        try {
+//            Date date = sf.parse("2017-01-01");
+//            System.out.println(date.getTime());
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
 
 //        new TT<TT>() {
 //        }.test();
